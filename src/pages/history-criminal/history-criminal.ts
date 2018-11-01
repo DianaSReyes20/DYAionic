@@ -45,7 +45,7 @@ export class HistoryCriminalPage {
     })
   }
   
-  getItems(){
+  /*getItems(){
     let queryTextLower = this.search.toLowerCase();
     let filteredTeams = [];
     _.forEach(this.allTeamDivisions, td => {
@@ -55,6 +55,6 @@ export class HistoryCriminalPage {
       }
     });
     this.teams = filteredTeams;
-  }
+  }*/
 
 }

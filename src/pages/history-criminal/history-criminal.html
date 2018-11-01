@@ -15,7 +15,7 @@
 
 <ion-content padding>
   <!--<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>-->
-  <ion-searchbar placeholder="Buscar por fecha" [(ngModel)] = "search" (ionInput)="getItems()"></ion-searchbar>
+  <ion-searchbar placeholder="Buscar por fecha" [(ngModel)] = "search" (ionInput)="getCriminals()"></ion-searchbar>
   <ion-list>       
     <ion-item *ngFor = "let criminales of teams">
       <ion-label>FECHA DENUNCIA: 
@@ -24,11 +24,11 @@
       <ion-label>FISICO DEL LADRON: 
         <p> {{ criminales.fisico_ladron }} </p>
       </ion-label>
-      <!--<ion-label>FOTO DEL LADRON: 
+      <ion-label>FOTO DEL LADRON: 
         <ion-avatar item-start>
-          <img [src] = "criminals.foto_ladron">
+          <img [src] = "criminales.foto_ladron">
         </ion-avatar>
-      </ion-label>-->
+      </ion-label>
       <ion-label>CONOCIDO POR:
         <p> {{ criminales.tipo_denuncia }} </p>
       </ion-label>
