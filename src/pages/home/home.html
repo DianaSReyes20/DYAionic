@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title text-center>
+      LOGIN
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background" padding center text-center>
+
+  <img  src="assets/icon/escudo.png">
+    <!--- segunda casilla contraseña-->  
+  
+    <ion-list>
+      <ion-item class=nombre>
+        <ion-input  placeholder="Digite su nombre de usuario" [(ngModel)]="username"> </ion-input>
+      </ion-item> 
+
+      <ion-item class=contraseña>
+        <ion-input placeholder="Digite su contraseña" type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button full color="light" (click)="iraMenu()"> Iniciar sesión </button>
+    <button ion-button full color="facebook" (click)="iraRegistro()"> Crear cuenta </button>
+</ion-content>
+
