@@ -1,7 +1,0 @@
-{
-  "name": "DYAIonic",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
